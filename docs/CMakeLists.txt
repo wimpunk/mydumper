@@ -61,11 +61,6 @@ if(GENERATE_DOC)
     "${SOURCES_DIR}"
   )
 
-  # note the trailing slash to exclude directory name
-  install(DIRECTORY "${SOURCES_DIR}/"
-    DESTINATION "share/doc/mydumper"
-  )
-
   # Sphinx cache with pickled ReST documents
   set(SPHINX_CACHE_DIR "${CMAKE_CURRENT_BINARY_DIR}/_doctrees")
   # HTML output directory
